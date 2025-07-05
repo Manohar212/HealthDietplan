@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthBuddy Diet Guide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+
+    .nav-buttons button {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      border: none;
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-buttons button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #00c6ff;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #00ffe7;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #2c2c2c;
+      padding: 12px;
+      margin: 8px 0;
+      border-left: 6px solid #00c6ff;
+      border-radius: 6px;
+    }
+
+    .diet-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .diet-img {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .diet-img img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .diet-info {
+      flex: 2 1 500px;
+    }
+
+    @media (max-width: 768px) {
+      .diet-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HEALTHBUDDY DIET PLANS</h1>
+    <p>Tailored Diets for Chronic Conditions - Stay Safe, Stay Healthy!</p>
+  </header>
+
+  <div class="nav-buttons">
+    <button onclick="scrollToSection('diabetes')">Diabetes</button>
+    <button onclick="scrollToSection('bp')">Hypertension</button>
+    <button onclick="scrollToSection('kidney')">Kidney Disease</button>
+    <button onclick="scrollToSection('thyroid')">Thyroid</button>
+    <button onclick="scrollToSection('liver')">Liver Disease</button>
+    <button onclick="scrollToSection('cancer')">Cancer</button>
+  </div>
+
+  <section id="diabetes">
+    <h2>Diet Plan for Diabetes</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691094/cld-sample-5.jpg" alt="Diabetes Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Helps manage blood sugar levels, supports insulin function, and reduces risk of complications like neuropathy and heart issues.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>Whole grains (brown rice, oats)</li>
+          <li>Leafy greens (spinach, kale)</li>
+          <li>Non-starchy vegetables</li>
+          <li>Lean proteins (tofu, chicken)</li>
+          <li>Healthy fats (avocado, olive oil)</li>
+        </ul>
+        <h3> Avoid</h3>
+        <ul>
+          <li>Sugary drinks, refined carbs</li>
+          <li>Deep-fried and sweetened snacks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="bp">
+    <h2>Diet Plan for Hypertension</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691265/miylbgatcahvz5upyh0j.jpg" alt="BP Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Helps lower blood pressure, supports heart health, and reduces risk of stroke and kidney damage.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>Bananas, oranges (rich in potassium)</li>
+          <li>Low-fat dairy products</li>
+          <li>Whole grains</li>
+          <li>Lean meats and fish</li>
+          <li>Unsalted nuts and seeds</li>
+        </ul>
+        <h3>Avoid</h3>
+        <ul>
+          <li>High sodium foods</li>
+          <li>Canned soups and processed meats</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="kidney">
+    <h2>Diet Plan for Kidney Disease</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691297/cld-sample-3.jpg" alt="Kidney Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Supports kidney function, controls fluid retention, and reduces waste buildup in the blood.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>White rice, white bread (low potassium)</li>
+          <li>Apples, berries</li>
+          <li>Cauliflower, cabbage</li>
+          <li>Egg whites</li>
+        </ul>
+        <h3> Avoid</h3>
+        <ul>
+          <li>High potassium and phosphorus foods</li>
+          <li>Bananas, oranges, nuts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="thyroid">
+    <h2>Diet Plan for Thyroid</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691327/cld-sample-4.jpg" alt="Thyroid Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Regulates hormone production, boosts metabolism, and supports energy levels and mood.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>Iodine-rich foods (iodized salt, seafood)</li>
+          <li>Brazil nuts (selenium)</li>
+          <li>Eggs, dairy</li>
+          <li>Fresh fruits and vegetables</li>
+        </ul>
+        <h3> Avoid</h3>
+        <ul>
+          <li>Excess soy products</li>
+          <li>Cruciferous vegetables (raw cabbage, broccoli in excess)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="liver">
+    <h2>Diet Plan for Liver Disease</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691354/cld-sample-2.jpg" alt="Liver Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Detoxifies the liver, reduces fat accumulation, and improves enzyme levels and liver function.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>High-fiber foods (fruits, whole grains)</li>
+          <li>Green tea</li>
+          <li>Cruciferous vegetables</li>
+          <li>Lean proteins</li>
+        </ul>
+        <h3> Avoid</h3>
+        <ul>
+          <li>Alcohol, fried foods</li>
+          <li>Sugar-rich snacks and refined carbs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="cancer">
+    <h2>Diet Plan for Cancer</h2>
+    <div class="diet-wrapper">
+      <div class="diet-img">
+        <img src="https://res.cloudinary.com/dmtlysvom/image/upload/v1751691384/cld-sample.jpg" alt="Cancer Diet">
+      </div>
+      <div class="diet-info">
+        <p><strong>Uses:</strong> Strengthens immunity, maintains energy levels, and supports body repair during/after treatment.</p>
+        <h3> Recommended Foods</h3>
+        <ul>
+          <li>Colorful fruits and vegetables</li>
+          <li>Whole grains</li>
+          <li>Legumes and nuts</li>
+          <li>Lean meat or plant-based proteins</li>
+        </ul>
+        <h3> Avoid</h3>
+        <ul>
+          <li>Processed meats, sugary foods</li>
+          <li>High-sodium packaged snacks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
